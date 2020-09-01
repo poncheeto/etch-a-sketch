@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <title>Etch-A-Sketch</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
         <link rel="stylesheet" href="styles.css">
+        <title>Etch-A-Sketch</title>
+        
     </head>
     <body>
         <div id='container'></div>
@@ -23,10 +26,24 @@
                     for (var j = 0; j < 16; j++) {
                         var box = document.createElement('div');
                         box.classList.add('box');
+                        //box.addEventListener('mouseover', changeColor);
                         row.appendChild(box);
                     }
                 }
             }
+
+            // Create function that changes box colors
+            function changeColor(e) {
+                document.querySelector('.box').style.backgroundColor = 'black';
+            }
+
+            // Create event listener on hover 
+            const boxes = document.querySelectorAll('.box');
+                boxes.forEach(box)
+                boxes.addEventListener('click', changeColor);
+                console.log(e);
+                
+
         </script>
     </body>
 </html>
