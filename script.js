@@ -21,7 +21,6 @@ changeColor = (e) => {
 
 // Create event listener on hover 
 const box = document.querySelector('#container');
-console.dir(box.firstElementChild);  
+console.dir(box.firstElementChild);
 //box.addEventListener('mouseover', changeColor);
 //console.log(e)
-    
