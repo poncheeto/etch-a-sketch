@@ -57,6 +57,10 @@ body {
     background-color: 	#755757;
 }
 
+button {
+    display: inline-block;
+}
+
 .box {
     border: gray 1px dotted;
     background-color: lightgray;
@@ -65,11 +69,15 @@ body {
     margin: 0 auto;
     margin-top: 0;
     cursor: pointer;
-    display: inline-block;
-    float: left;
+    float: right;
 }
 
 .row {
-    float: left;
+    float: right;
     width: 100%;
+}
+
+.color {
+    backgroud-color: gray;
+    border: black 1px solid;
 }
