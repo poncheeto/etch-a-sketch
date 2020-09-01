@@ -3,8 +3,46 @@
     <head>
         <meta charset="utf-8">
         <title>Etch-A-Sketch</title>
+        <style>
+            .box {
+                border: gray 1px dotted;
+                width: 35px;
+                height: 35px;
+                margin: 0 auto;
+                margin-top: 0;
+                cursor: pointer;
+                display: inline-block;
+                float: left;
+            }
+
+            .row {
+                float: left;
+                width: 100%;
+            }
+        </style>
     </head>
     <body>
-        
+        <div id='container'></div>
+        <div>
+            <button onclick="makeGrid();">Create Grid</button>
+        </div>
+        <script>
+
+            // Create a function to create grid
+            function makeGrid() {
+                // Create divs of rows
+                for (var i = 0; i < 16; i++) {
+                    var row = document.createElement('div');
+                    row.classList.add('row');
+                    document.querySelector('#container').appendChild(row);
+                    // Create divs of boxes within rows
+                    for (var j = 0; j < 16; j++) {
+                        var box = document.createElement('div');
+                        box.classList.add('box');
+                        row.appendChild(box);
+                    }
+                }
+            }
+        </script>
     </body>
 </html>
