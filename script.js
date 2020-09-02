@@ -1,5 +1,5 @@
 const grid = document.querySelector('.gridContainer');
-const userInput = document.getSelection('.quantity');
+const newBtn = document.getSelection('.quantity');
 const resetBtn = document.querySelector('.reset');
 
 // Create a function to create grid
