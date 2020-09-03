@@ -32,7 +32,6 @@ html {
 	
 }
 
-
 .box {
 	background-color: lightgray;
 	border: 1px dotted black;
@@ -51,7 +50,6 @@ html {
 	margin-top: 25px;
 	margin-right: 40px;
 	display: inline-grid;
-	grid-template-rows: repeat(16, 2fr);
-	grid-template-columns: repeat(16, 2fr);
+	grid: repeat(16, 2fr) / repeat(16, 2fr);
 	cursor: crosshair;
 }
