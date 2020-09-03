@@ -1,12 +1,12 @@
 const grid = document.querySelector('.gridContainer');
-const newBtn = document.getSelection('.new');
+const newBtn = document.getElementById('new');
 const resetBtn = document.querySelector('.reset');
 
 // Create a function to create grid
 makeGrid = () => {
     // Create grid of divs
     for (var i = 0; i < 256; i++) {
-        var div = document.createElement('div');
+        const div = document.createElement('div');
         div.classList.add('box');
         grid.appendChild(div);
     }
@@ -22,8 +22,19 @@ const box = document.querySelector('div');
 box.addEventListener('mouseover', changeColor);
 
 // Create function to update grid to user input
-updateGrid = () => {
-    prompt('Enter dimension size');
-}
+updateGrid = (e) => {
+    var num = prompt('Enter dimension size');
+    grid.innerHTML = '';
+    grid.style.setProperty('grid', `repeat(${num}, 2fr) / repeat(${num}, 2fr)`);
+    //grid.style.setProperty('grid', `repeat(${num}, 2fr)`);
+    for (var i = 0; i < (num * num); i++) {
+        const div = document.createElement('div');
+        div.classList.add('box');
+        grid.appendChild(div);
+    }
+};
+
+// Create event listener on New Grid Button  
+newBtn.addEventListener('click', updateGrid);
 
 makeGrid();
