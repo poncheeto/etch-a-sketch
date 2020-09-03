@@ -10,16 +10,12 @@ html {
     background: #755757;
 }
 
-.right {
+.gridSpace {
     float: right;
 }
 
-.left {
-    display: inline-block;
-}
-
 .content {
-	display: contents;
+	display: inline-block;
 }
 
 .button {
@@ -28,6 +24,7 @@ html {
 	background: lightgray;
 	height: 40px;
 	font-weight: bold;
+	color: black;
 	cursor: pointer;
 	
 }
