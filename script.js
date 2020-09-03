@@ -1,5 +1,5 @@
 const grid = document.querySelector('.gridContainer');
-const newBtn = document.getSelection('.quantity');
+const newBtn = document.getSelection('.new');
 const resetBtn = document.querySelector('.reset');
 
 // Create a function to create grid
@@ -20,5 +20,10 @@ changeColor = (e) => {
 // Create event listener on hover  
 const box = document.querySelector('div');
 box.addEventListener('mouseover', changeColor);
+
+// Create function to update grid to user input
+updateGrid = () => {
+    prompt('Enter dimension size');
+}
 
 makeGrid();
