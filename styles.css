@@ -18,6 +18,11 @@ html {
     display: inline-block;
 }
 
+.content {
+	display: contents;
+}
+
+
 .box {
 	background-color: lightgray;
 	border: 1px dotted black;
