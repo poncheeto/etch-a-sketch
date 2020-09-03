@@ -10,8 +10,14 @@ html {
     background: #755757;
 }
 
+h1 {
+	position: relative;
+	top: 0
+}
+
 .gridSpace {
-    float: right;
+	margin: 30px;
+	position: relative;
 }
 
 .content {
@@ -44,8 +50,7 @@ html {
 	border-radius: 5px;
 	height: 575px;
 	width: 575px;
-	margin-top: 25px;
-	margin-right: 40px;
+	top: 200px;
 	display: inline-grid;
 	grid: repeat(16, 2fr) / repeat(16, 2fr);
 	cursor: crosshair;
